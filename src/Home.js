@@ -43,7 +43,7 @@ function Home(props) {
                                 id={item.Item.id}
                                 title={item.Item.titulo}
                                 price={item.Item.precio}
-                                rating={item.Item.rating}
+                                rating={item.Item.ratting}
                                 image={item.Item.imagen}
                                 stock={item.Item.stock}
                             />

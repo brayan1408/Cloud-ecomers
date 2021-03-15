@@ -2,6 +2,19 @@ import React from 'react'
 import { db } from './firebase'
 import './Product.css'
 
+
+
+let retestrellas = (num) => {
+    console.log(num);
+    return num !== 0
+      ? Array(num)
+        .fill(null)
+        .map((item, i) => {
+          return <p>🌟</p>
+        })
+      : ''
+}
+
 function Product(props) {
 
     const addToCart = () => {
@@ -29,7 +42,7 @@ function Product(props) {
                 <span className="Product-title">{props.title}</span>
                 <span className="Product-price">${props.price}</span>
                 <span className="Product-rating">
-                    <p>🌟</p><p>🌟</p><p>🌟</p><p>🌟</p><p>🌟</p>
+                    {retestrellas(props.rating)}
                 </span>
             </div>
             <img src={props.image} />
