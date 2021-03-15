@@ -29,20 +29,6 @@ function App() { 
     })
   }, [])
 
-const [ storeItems, setStoreItems ] = useState([]);
-
-  useEffect(() => {
-    db.collection('productos').onSnapshot((snapshot)=>{
-      let tempStoreItems = []
-      snapshot.docs.map((doc)=>{
-        tempStoreItems.push({
-              id: doc.id,
-              Item: doc.data()
-          })
-      })
-      setStoreItems(tempStoreItems)
-    })
-  }, [])
 
   return (
     <Router>
@@ -54,7 +40,7 @@ const [ storeItems, setStoreItems ] = useState([]);
             <Cart cartItems={cartItems} />
           </Route>
           <Route path="/">
-            <Home storeItems={storeItems}/>
+            <Home />
           </Route>
         </Switch>
       </div>
