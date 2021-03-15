@@ -33,6 +33,9 @@ function Product(props) {
                 </span>
             </div>
             <img src={props.image} />
+            <div className="Product-disp">
+                <span className="Product-stock">Stock: {props.stock}</span>
+            </div>
             <button onClick={addToCart} >Añadir al carro</button>
         </div>
     )
