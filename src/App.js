@@ -1,9 +1,12 @@
 import logo from './logo.svg';
+import React, {Component} from 'react';
 import { useEffect, useState } from 'react'
 import './App.css';
+import SimpleForms from './SimpleForms'
 import Header from './Header'
 import Home from './Home'
 import Cart from './Cart'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,10 +48,14 @@ const [ storeItems, setStoreItems ] = useState([]);
   }, [])
 
   return (
+    
     <Router>
+      
       <div className="App">
+      
         <Header 
           cartItems={cartItems} />
+          
         <Switch>
           <Route path="/cart">
             <Cart cartItems={cartItems} />
@@ -57,6 +64,10 @@ const [ storeItems, setStoreItems ] = useState([]);
             <Home storeItems={storeItems}/>
           </Route>
         </Switch>
+        
+        <div className="chatbot">
+          <SimpleForms />
+        </div>
       </div>
     </Router>
   );

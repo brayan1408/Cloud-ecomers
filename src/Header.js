@@ -37,7 +37,8 @@ function Header(props) {
                 {/* icon */}
                 <div className="Header-option">
                     
-                    <span className="Header-optionLineTwo">¡Bienvenido ...!</span>
+                    <span className="Header-optionLineTwo">¡Bienvenido!</span>
+
                 </div>
 
             </div>
@@ -49,11 +50,7 @@ function Header(props) {
                 </div>  
             </div>
             <div className="Header-navItems">
-                    {/* Login name */}
-                <div className="Header-option">
-                    <span className="Header-optionLineOne">Hola</span>
-                    <span className="Header-optionLineTwo">Andres</span>
-                </div>  
+
                     {/* Orders */}
                 <div className="Header-option">
                     <span className="Header-optionLineOne">Tus</span>

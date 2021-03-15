@@ -2,6 +2,11 @@ body {
   background-color: #EAEDED;
 }
 
+.chatbot {
+  z-index: 1;
+  position:relative;
+}
+
 * {
   margin: 0;
 }
