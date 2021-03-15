@@ -1,5 +1,5 @@
 .Product {
-    max-height: 400px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -27,9 +27,9 @@
 
 .Product button {
     margin-top: 8px;
-    background-color: #f0c14b;
+    background-color: #ffffff;
     width: 100px;
     height: 30px;
-    border: 2px solid #a88734;
+    border: 2px solid #111852;
     border-radius: 2px;
 }

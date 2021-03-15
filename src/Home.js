@@ -24,31 +24,21 @@ function Home(props) {
     return (
         <div className="Home">
             <div className="Home-container">
-                <div 
-                    className="Home-banner" 
-                    style={{backgroundImage: "url(https://2.bp.blogspot.com/-QTd5li0eITw/UkLM49wSpHI/AAAAAAAASZ0/qCC7tswbRv8/s1600/Descargar+Pack+Impresionantes+fondos+abstractos+%2528140%2529.jpg)"}}>
+            <div 
+                className="Oferta" 
+                style={{backgroundImage: "url(https://thumbs.gfycat.com/JauntyBabyishKitten-small.gif)"}}>
 
-                </div>
-
-			
+            </div>
+            <div 
+                className="Home-banner" 
+                style={{backgroundImage: "url(https://img.freepik.com/vector-gratis/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg?size=626&ext=jpg)"}}>
+            </div>
+                
+                
                 <div className="Home-content">
-	        <div className="Home-row">
-                        {
-                            products.map((product)=>(
-                                <Product
-                                    id={product.id}
-                                    key={product.id}
-                                    title={product.product.title}
-                                    price={product.product.price}
-				                    rating={product.product.rating}
-                                    image={product.product.image}
-                                    stock={product.product.stock}
-                                />
-                            ))
-                        }
-                    </div>
+                    
                     <div className="Home-row">
-                        {props.storeItems.map((item)=>{
+                    {props.storeItems.map((item)=>{
                             return <Product 
                                 id={item.Item.id}
                                 title={item.Item.titulo}
@@ -59,7 +49,7 @@ function Home(props) {
                             />
                         })}
                     </div>
-                   
+                    
                 </div>
             </div>
 
