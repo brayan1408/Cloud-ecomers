@@ -42,6 +42,7 @@ function Home(props) {
                                     price={product.product.price}
 				    rating={product.product.rating}
                                     image={product.product.image}
+	    			    stock={product.product.stock}
                                 />
                             ))
                         }
@@ -54,6 +55,7 @@ function Home(props) {
                                 price={item.Item.precio}
                                 rating={item.Item.rating}
                                 image={item.Item.imagen}
+				stock={item.Item.stock}
                             />
                         })}
                     </div>
