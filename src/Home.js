@@ -3,12 +3,12 @@ import './Home.css'
 import Product from './Product'
 import { db } from './firebase'
 
-function Home() {
+function Home(props) {
 
     const [ products, setProducts ] = useState([]);
 
     useEffect(() => {
-        db.collection('productos').onSnapshot((snapshot)=>{
+        db.collection('products').onSnapshot((snapshot)=>{
             let tempProducts = []
             snapshot.docs.map((doc)=>{
                 tempProducts.push({
@@ -24,34 +24,42 @@ function Home() {
     return (
         <div className="Home">
             <div className="Home-container">
-            <div 
-                className="Oferta" 
-                style={{backgroundImage: "url(https://thumbs.gfycat.com/JauntyBabyishKitten-small.gif)"}}>
+                <div 
+                    className="Home-banner" 
+                    style={{backgroundImage: "url(https://2.bp.blogspot.com/-QTd5li0eITw/UkLM49wSpHI/AAAAAAAASZ0/qCC7tswbRv8/s1600/Descargar+Pack+Impresionantes+fondos+abstractos+%2528140%2529.jpg)"}}>
 
-            </div>
-            <div 
-                className="Home-banner" 
-                style={{backgroundImage: "url(https://img.freepik.com/vector-gratis/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg?size=626&ext=jpg)"}}>
-            </div>
+                </div>
 
+			
                 <div className="Home-content">
-                    <div className="Home-row">
+	        <div className="Home-row">
                         {
                             products.map((product)=>(
                                 <Product
                                     id={product.id}
                                     key={product.id}
-                                    title={product.product.titulo}
-                                    price={product.product.precio}
-                                    rating={product.product.ratting}
-                                    image={product.product.imagen}
+                                    title={product.product.title}
+                                    price={product.product.price}
+				                    rating={product.product.rating}
+                                    image={product.product.image}
+                                    stock={product.product.stock}
                                 />
                             ))
                         }
                     </div>
                     <div className="Home-row">
-                       
+                        {props.storeItems.map((item)=>{
+                            return <Product 
+                                id={item.Item.id}
+                                title={item.Item.titulo}
+                                price={item.Item.precio}
+                                rating={item.Item.rating}
+                                image={item.Item.imagen}
+                                stock={item.Item.stock}
+                            />
+                        })}
                     </div>
+                   
                 </div>
             </div>
 

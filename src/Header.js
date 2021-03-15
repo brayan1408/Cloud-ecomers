@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css'
-import Logo from './logo2.png';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import {
@@ -29,19 +28,18 @@ function Header(props) {
             {/* Logo */}
             <Link to="/">
                 <div className="Header-logo">
-                    <img src={Logo} />
+                    <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Star_Television_logo.svg/245px-Star_Television_logo.svg.png"} />
                 </div>
             </Link>
             {/* Address */}
             <div className="Header-optionAddress">
                 {/* icon */}
                 <div className="Header-option">
-                    
-                    <span className="Header-optionLineTwo">¡Bienvenido ...!</span>
+                    <span className="Header-optionLineOne">Bienvenido,</span>
+                    <span className="Header-optionLineTwo">Busca algo</span>
                 </div>
 
             </div>
-
             {/* Search */}
             <div className="Header-search">
                 <input className="Header-searchInput" type="text" />

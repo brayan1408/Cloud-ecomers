@@ -1,15 +1,14 @@
 .Header {
-    background-color: #2bbbbb;
+    background-color: #0F1111;
     color: white;
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .Header img {
-    width: 180px;
-    border-radius: 4px;
+    width: 100px;
     margin-left: 20px;
 }
 
@@ -26,15 +25,15 @@
 .Header-search {
     flex-grow: 1;
     display: flex;
-    height: 30px;
+    height: 40px;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .Header-searchIconContainer {
     width: 45px;
-    background-color: #111852;
-    color: rgb(255, 255, 255);
+    background-color: #febd69;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,7 @@
 }
 
 .Header-search:focus-within {
-    box-shadow: 0 0 0 3px #111852;
+    box-shadow: 0 0 0 3px #F90;
 }
 
 .Header-navItems {
@@ -68,7 +67,7 @@
 
 .Header-cartCount {
     font-weight: bold;
-    color: #111852;
+    color: #f08804;
     padding-left: 4px;
 }
 
