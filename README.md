@@ -1,4 +1,4 @@
-# Introducción a la aplicación Create React
+# Aplicación E-commerce con React
 
 En el directorio del proyecto, puede ejecutar:
 
