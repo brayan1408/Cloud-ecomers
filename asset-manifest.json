@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Cloud-ecomers/static/css/main.3035dcdd.chunk.css",
+    "main.js": "/Cloud-ecomers/static/js/main.5e964a1d.chunk.js",
+    "main.js.map": "/Cloud-ecomers/static/js/main.5e964a1d.chunk.js.map",
+    "runtime-main.js": "/Cloud-ecomers/static/js/runtime-main.d2260ce3.js",
+    "runtime-main.js.map": "/Cloud-ecomers/static/js/runtime-main.d2260ce3.js.map",
+    "static/js/2.990c7e26.chunk.js": "/Cloud-ecomers/static/js/2.990c7e26.chunk.js",
+    "static/js/2.990c7e26.chunk.js.map": "/Cloud-ecomers/static/js/2.990c7e26.chunk.js.map",
+    "static/js/3.d295cdd9.chunk.js": "/Cloud-ecomers/static/js/3.d295cdd9.chunk.js",
+    "static/js/3.d295cdd9.chunk.js.map": "/Cloud-ecomers/static/js/3.d295cdd9.chunk.js.map",
+    "index.html": "/Cloud-ecomers/index.html",
+    "static/css/main.3035dcdd.chunk.css.map": "/Cloud-ecomers/static/css/main.3035dcdd.chunk.css.map",
+    "static/js/2.990c7e26.chunk.js.LICENSE.txt": "/Cloud-ecomers/static/js/2.990c7e26.chunk.js.LICENSE.txt",
+    "static/media/chatbot2.1c95645b.png": "/Cloud-ecomers/static/media/chatbot2.1c95645b.png",
+    "static/media/logo.6ce24c58.svg": "/Cloud-ecomers/static/media/logo.6ce24c58.svg",
+    "static/media/logo2.1295ac7c.png": "/Cloud-ecomers/static/media/logo2.1295ac7c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2260ce3.js",
+    "static/js/2.990c7e26.chunk.js",
+    "static/css/main.3035dcdd.chunk.css",
+    "static/js/main.5e964a1d.chunk.js"
+  ]
+}
